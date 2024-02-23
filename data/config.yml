@@ -1,0 +1,13 @@
+catalog:
+  undergrad:
+    url: "https://catalog.kettering.edu/coursesaz/undergrad/"
+    tags: [
+      'BIOL', 'BUSN', 'CHME', 'CHEM', 'COMM', 'CE', 'CS', 'ECON', 'ECE', 'EE', 'ENGR', 'EP', 'HIST', 'HUMN', 'IME',
+      'CILE', 'LANG', 'LA', 'LIT', 'MGMT', 'MATH', 'MECH', 'MEDI', 'PHIL', 'PHYS', 'PSYC', 'SSCI', 'SOC'
+    ]
+  grad:
+    url: "https://catalog.kettering.edu/coursesaz/grad/"
+    tags: [
+      'ACCT', 'BUSN', 'COMM', 'CE', 'CS', 'ECE', 'EE', 'ENGR', 'FINC', 'IME', 'ISYS', 'MFGO', 'MGMT', 'MKRT', 'MATH',
+      'MECH'
+    ]
