@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="776db16c-0065-47b8-9aa1-58a06dcf4706" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CourseTool.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/course_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exports/S2024_Undergraduate.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exports/W2024_Undergrad.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/interfaces.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="776db16c-0065-47b8-9aa1-58a06dcf4706" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/exports/S2024_Undergrad.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exports/S2024_mechelv.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exports/S2024_mechelv.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exports/S2024_mechelv.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/course_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/course_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exports/S2024_Undergraduate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/exports/S2024_Undergrad.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/exports/W2024_Undergrad.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/exports/S2024_Undergrad.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,8 +126,17 @@
       <workItem from="1708712396464" duration="769000" />
       <workItem from="1708713178492" duration="4308000" />
       <workItem from="1708718456794" duration="135000" />
-      <workItem from="1708722865038" duration="1997000" />
+      <workItem from="1708722865038" duration="4047000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1708725114752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708725114752</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,8 +144,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CourseTool$main.coverage" NAME="main Coverage Results" MODIFIED="1708724844737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CourseTool$main.coverage" NAME="main Coverage Results" MODIFIED="1708726976783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

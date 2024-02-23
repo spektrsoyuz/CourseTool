@@ -1,0 +1,1321 @@
+{
+  "BIOL": {
+    "BIOL-494": {
+      "tag": "BIOL-494",
+      "name": "Research Methods",
+      "coreqs": "None",
+      "prereqs": "BIOL-381 and BIOL-382",
+      "standing": "Freshman",
+      "desc": "A capstone course where students design, execute, analyze and report the results of original research in collaboration with a faculty member. Students are required to give a formal presentation of their findings.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "8:00-12:20pm",
+          "date": "R",
+          "building": "MC",
+          "room": "3222",
+          "avail": 4
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "BUSN": {
+    "BUSN-303": {
+      "tag": "BUSN-303",
+      "name": "New Venture Creation: Entrepreneurship",
+      "coreqs": "None",
+      "prereqs": "None",
+      "standing": "Sophomore",
+      "desc": "The development of an innovative product, service or delivery method into a feasible business model will be the focus of this course. Students will identify a particular customer need that can be met with a novel approach using a combination of resources, including technology, marketing or financial acumen. Student teams will develop a business plan and stakeholder/investor presentation suitable for actual funding in one of the following areas: New Venture Entrepreneurship, Social Entrepreneurship or Intrapreneurship.",
+      "sections": {
+        "01": {
+          "instructor": "Grether, John",
+          "time": "10:15-12:20pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "4301",
+          "avail": 30
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "CHME": {
+    "CHME-310": {
+      "tag": "CHME-310",
+      "name": "Fluid Dynamics and Heat Transfer",
+      "coreqs": "CHME-200, CHME-325, MATH-203",
+      "prereqs": "None",
+      "standing": "Freshman",
+      "desc": "The application of fluid mechanics, phase transitions, and heat transfer in chemical engineering is demonstrated. Fluid studies including statistics, dynamics, friction losses, Newtonian and non-fluids, pumps, and metering of flows will be discussed. Mixing and agitation processes will be presented. Heat transfer processes, heat exchangers, evaporation and other heat transfer applications involving phase change will be discussed.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "10:15-12:20pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2234",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CHME-325": {
+      "tag": "CHME-325",
+      "name": "Fluid Dynamics and Heat Transfer Lab",
+      "coreqs": "CHME-310",
+      "prereqs": "None",
+      "standing": "Freshman",
+      "desc": "This laboratory course demonstrates concepts in fluid mechanics and heat transfer as they relate to chemical engineering. Process measurements and the concepts of accuracy and precision are covered. Fluid static, dynamics, and metering of flows are explored. Experiments on heat conduction and convection are performed. Heat exchanger design and analysis are introduced. Computational topics include feed loop design and solutions of boundary value problems in momentum and heat transport. Finite element simulations are briefly explored.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "8:00-10:05am",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2416",
+          "avail": 24
+        }
+      },
+      "credits": "2"
+    },
+    "CHME-430": {
+      "tag": "CHME-430",
+      "name": "Process Controls",
+      "coreqs": "None",
+      "prereqs": "CHME-330 and CHME-350",
+      "standing": "Freshman",
+      "desc": "An understanding of the basic principles and methods underlying the steady state and dynamic characterization of chemical process control will be provided. This course introduces dynamic processes and the engineering tasks of process operations and control. Subject covers modeling the static and dynamic behavior of processes; control strategies; fundamentals and design of PID feedback, feed forward, cascade, and other control structures; controls equipment and instrumentation; statistical design of experiment; and process monitoring and statistical process control.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2234",
+          "avail": 20
+        }
+      },
+      "credits": "4"
+    },
+    "CHME-480": {
+      "tag": "CHME-480",
+      "name": "Chemical Engineering Capstone",
+      "coreqs": "None",
+      "prereqs": "CHME-440",
+      "standing": "Senior",
+      "desc": "This is the second of two advanced courses incorporating ore chemical engineering principles into the design of a plant. Concepts built through the first semester course will be strengthened and applied to new design projects. Additional design topics including debottlenecking and troubleshooting will be introduced. Optimization to improve process performance and energy savings will be utilized and applied to course projects. Green engineering and environmental standards will be discussed as related to chemical engineering design. Students will complete large-scale industrial design projects in teams throughout the course. Finally, chemical product design concepts and strategies will be discussed.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "8:00-10:05am",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2234",
+          "avail": 18
+        }
+      },
+      "credits": "4"
+    },
+    "CHME-491": {
+      "tag": "CHME-491",
+      "name": "Advanced Chemical Engineering Elective",
+      "coreqs": "None",
+      "prereqs": "None",
+      "standing": "Freshman",
+      "desc": "An interdisciplinary advanced course focusing on a specific Chemical Engineering topic. This course is a one-time offering whose content is determined by current faculty interest, and provides a comprehensive and coherent examination of the chosen topic. This course may be repeated for credit under different topics.",
+      "sections": {
+        "01": {
+          "instructor": "Wang, Lihua",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2232",
+          "avail": 18
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "CHEM": {
+    "CHEM-347": {
+      "tag": "CHEM-347",
+      "name": "Organic Chemistry II",
+      "coreqs": "None",
+      "prereqs": "CHEM-345",
+      "standing": "Sophomore 2",
+      "desc": "A continuation of CHEM-345 with an emphasis on the chemistry of the organic functional groups and the synthesis of polyfunctional molecules will be provided. Appropriate for science majors.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "1:20-3:25pm",
+          "date": "M, R",
+          "building": "MC",
+          "room": "3222",
+          "avail": 8
+        },
+        "02X": {
+          "instructor": "STAFF",
+          "time": "1:20-3:25pm",
+          "date": "M, R, F",
+          "building": "MC",
+          "room": "3222",
+          "avail": 8
+        }
+      },
+      "credits": "4"
+    },
+    "CHEM-348": {
+      "tag": "CHEM-348",
+      "name": "Organic Chemistry II Lab",
+      "coreqs": "CHEM-347",
+      "prereqs": "CHEM-345 and CHEM-346",
+      "standing": "Sophomore 2",
+      "desc": "A continuation of CHEM-346 with an emphasis on the advanced techniques used to synthesize multifunctional organic compounds will be provided. Instrumental methods will be intensively utilized to characterize complex chemical structures.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "1:20-5:40pm",
+          "date": "W",
+          "building": "MC",
+          "room": "3222",
+          "avail": 8
+        }
+      },
+      "credits": "2"
+    },
+    "CHEM-361": {
+      "tag": "CHEM-361",
+      "name": "Physical Chemistry I",
+      "coreqs": "CHEM-362",
+      "prereqs": "CHEM-237 and CHEM-238 and PHYS-224 and PHYS-225",
+      "standing": "Junior",
+      "desc": "A first course in physical chemistry, covering the topics of chemical thermodynamics, gas laws, solutions, transport properties, phases and phase diagrams, electrochemistry, colligative properties and the physical chemistry of macromolecules.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "8:00-10:05am",
+          "date": "T, F",
+          "building": "MC",
+          "room": "3222",
+          "avail": 12
+        }
+      },
+      "credits": "4"
+    },
+    "CHEM-362": {
+      "tag": "CHEM-362",
+      "name": "Physical Chemistry I Lab",
+      "coreqs": "CHEM-361",
+      "prereqs": "None",
+      "standing": "Junior",
+      "desc": "This laboratory will illustrate principles covered in the CHEM-361 lecture and introduce the student to methods used in determining physical relationships in nature. Topics include equilibrium, phase diagrams, solutions, thermodynamics, gases, transport properties and error analysis.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "8:00-12:20pm",
+          "date": "W",
+          "building": "MC",
+          "room": "3112",
+          "avail": 12
+        }
+      },
+      "credits": "3"
+    },
+    "CHEM-451": {
+      "tag": "CHEM-451",
+      "name": "Biochemistry II",
+      "coreqs": "CHEM-452",
+      "prereqs": "CHEM-351 and CHEM-352",
+      "standing": "Junior 2",
+      "desc": "A comprehensive advanced Biochemistry lecture course. It will cover topics related to the biochemistry of the human body, including the breakdown and synthesis of glucose, fatty acids, amino acids, and nucleotides.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "10:15-12:20pm",
+          "date": "T, F",
+          "building": "MC",
+          "room": "3222",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "CHEM-452": {
+      "tag": "CHEM-452",
+      "name": "Biochemistry II Lab",
+      "coreqs": "CHEM-451",
+      "prereqs": "CHEM-351 and CHEM-352",
+      "standing": "Junior 2",
+      "desc": "A comprehensive advanced Biochemistry laboratory. Topics related to the isolation and manipulation of DNA and proteins will be covered. Including techniques such as PCR, Western blotting, mutagenesis, DNA Fingerprinting, and molecular modeling.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "1:20-5:40pm",
+          "date": "T",
+          "building": "MC",
+          "room": "3222",
+          "avail": 16
+        }
+      },
+      "credits": "3"
+    },
+    "CHEM-494": {
+      "tag": "CHEM-494",
+      "name": "Research Methods",
+      "coreqs": "None",
+      "prereqs": "BIOL-242 or CHEM-238",
+      "standing": "Junior 2",
+      "desc": "Topics will include research ethics, study design and implementation, and results communications. Students will learn about these topics through readings, discussions, and practical application.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "8:00-12:20pm",
+          "date": "R",
+          "building": "MC",
+          "room": "3222",
+          "avail": 6
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "CE": {
+    "CE-320": {
+      "tag": "CE-320",
+      "name": "Intro to Microcomputers",
+      "coreqs": "None",
+      "prereqs": "CE-210",
+      "standing": "Freshman",
+      "desc": "Principles of microcomputer hardware and software are presented. Topics include instruction sets and addressing modes, structured assembly language programming, topdown design, introductory machine architecture and its relationship to programming, introduction to hardware in typical microcontrollers, and an introduction to programming microcontrollers in C.",
+      "sections": {
+        "01": {
+          "instructor": "Park, Jungme",
+          "time": "10:15-11:45am",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2716",
+          "avail": 16
+        },
+        "02L": {
+          "instructor": "Park, Jungme",
+          "time": "10:15-12:20pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2823",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "CE-412": {
+      "tag": "CE-412",
+      "name": "Digital Systems Design",
+      "coreqs": "None",
+      "prereqs": "CE-210",
+      "standing": "Junior",
+      "desc": "The principles and practices used in the design of modern complex combinational and sequential digital systems is covered. Digital logic design, analysis, simulation, and implementation techniques are provided. Fundamental algorithms underlying computer-aided design (CAD) tools are studied. Schematic diagrams and hardware description languages (HDL) are used to specify designs targeted for implementation in technologies ranging from discrete ICs to programmable logic devices and ASICs. The course has a laboratory component that allows students to exercise the principles and practices learned.",
+      "sections": {
+        "01": {
+          "instructor": "Foster, David",
+          "time": "10:15-11:45am",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2907",
+          "avail": 16
+        },
+        "02L": {
+          "instructor": "Foster, David",
+          "time": "10:15-12:20pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2821",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "CE-420": {
+      "tag": "CE-420",
+      "name": "Microcomputer Systems",
+      "coreqs": "None",
+      "prereqs": "CE-320",
+      "standing": "Junior",
+      "desc": "This advanced course in Microcomputer Systems covers the architectural features, design principles, development tools and techniques of advanced embedded microcomputers. The topics include architectures of contemporary 16-bit and 32-bit RISC microcontrollers (considering Microchip PIC24 and PIC32 as example cases for the practical development experiences), instruction set, addressing modes, software development & debugging, parallel and serial interfacing, interrupts, timer module, ADC module, etc. The course has a strong laboratory component, which will be carried out on a microcomputer development kit with the latest family of 16-bit and 32-bit microcontrollers.",
+      "sections": {
+        "01": {
+          "instructor": "Tabrizi, Nozar",
+          "time": "1:20-2:50pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2911",
+          "avail": 16
+        },
+        "02L": {
+          "instructor": "Tabrizi, Nozar",
+          "time": "1:20-3:25pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2823",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "CE-451": {
+      "tag": "CE-451",
+      "name": "Introduction to Autonomous Driving",
+      "coreqs": "None",
+      "prereqs": "CS-101 or ECE-101 or IME-211 or MECH-330",
+      "standing": "Freshman",
+      "desc": "This course provides an overview of theoretical and practical background regarding the design and development of autonomous vehicles. Topics include an overview of autonomous vehicle systems, autonomous vehicle localization technologies, perception in autonomous driving, decision and planning, and control for autonomous driving. This course aims to cover the basics of autonomous driving through lectures, lab assignments, a term project, and readings on current related topics.",
+      "sections": {
+        "01": {
+          "instructor": "Zadeh, Mehrdad",
+          "time": "3:35-5:05pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2911",
+          "avail": 16
+        },
+        "02L": {
+          "instructor": "Zadeh, Mehrdad",
+          "time": "3:35-5:40pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2824",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "CE-480": {
+      "tag": "CE-480",
+      "name": "Computer Networks",
+      "coreqs": "None",
+      "prereqs": "CE-320 and MATH-258",
+      "standing": "Junior",
+      "desc": "Organization, analysis, and design of interconnected systems of computers are studied. Topics include the Open System Interconnection model and the Internet TCP/IP reference architecture. Standard protocols and technologies at each network layer will be covered, such as HTTP and a socket programming API at the application layer, TCP and UDP at the transport layer, and IPv4 and IPv6 along with fundamentals of routing at the network layer. Ethernet and Wi-Fi with their related physical mediums are discussed. The course will also introduce error detection and correction methods, basic network security principles and mobile technologies.",
+      "sections": {
+        "01": {
+          "instructor": "Foster, David",
+          "time": "8:00-9:30am",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2907",
+          "avail": 16
+        },
+        "02L": {
+          "instructor": "Foster, David",
+          "time": "8:00-10:05am",
+          "date": "W",
+          "building": "AB",
+          "room": "2823",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "CS": {
+    "CS-300": {
+      "tag": "CS-300",
+      "name": "The Computing Professional",
+      "coreqs": "None",
+      "prereqs": "COMM-101 and (CS-102 or CE-210)",
+      "standing": "Sophomore",
+      "desc": "An examination of the profession of computing from historical and ethical perspectives. Overview of the history of computing, from the earliest computational devices and theoretical foundations to modern developments. Discussion of the social impact of computing on society and the ethical implications for computing professionals, including analysis of case studies.",
+      "sections": {
+        "01": {
+          "instructor": "Zhu, Rui",
+          "time": "1:20-3:25pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "3506",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-304": {
+      "tag": "CS-304",
+      "name": "User Experience and Interface Design",
+      "coreqs": "None",
+      "prereqs": "CS-101 or ECE-101 or IME-211",
+      "standing": "Freshman",
+      "desc": "This course will study the design and art involved in the User Experience and User Interface development process. Emphasizes hands-on development with a focus on Digital User Experience design and Interfaces using standard industry tools. Students will learn the process of research, user identification, empathize with end users, design from user requirements, and how to test their designs. Students will evaluate everything from popular website UX/UI, automotive displays, the User experience design process for physical products, and the challenging task of designing for interactive media. Students will go through the entire process of UX design from ideation to delivery of designs through a series of weekly project-based deliverables. Students develop multiple UX/UI solutions.",
+      "sections": {
+        "01": {
+          "instructor": "Reeves, Corbin",
+          "time": "8:00-10:05am",
+          "date": "T, F",
+          "building": "AB",
+          "room": "4507",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-312": {
+      "tag": "CS-312",
+      "name": "Theory of Computation",
+      "coreqs": "None",
+      "prereqs": "CS-102 and CS-211",
+      "standing": "Sophomore",
+      "desc": "Topics covered in this course include: regular languages and grammars; finite-state machines and transducers; relationships between finite-state automata and regular languages; context-free languages and grammars; language recognition with stack machines and parsers; properties of formal languages; computability and undecidability; introduction to computational complexity.",
+      "sections": {
+        "01": {
+          "instructor": "Huggins, James",
+          "time": "10:15-12:20pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "3333",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-351": {
+      "tag": "CS-351",
+      "name": "Cloud Computing",
+      "coreqs": "None",
+      "prereqs": "CS-102",
+      "standing": "Freshman",
+      "desc": "A comprehensive overview of cloud computing and its application such as big data and machine learning. Current technologies that comprise the concept of cloud computing are discussed. Exploration of major Cloud frameworks and their applications.",
+      "sections": {
+        "01": {
+          "instructor": "Zhu, Rui",
+          "time": "8:00-9:30am",
+          "date": "M, R",
+          "building": "AB",
+          "room": "3506",
+          "avail": 24
+        },
+        "02L": {
+          "instructor": "Zhu, Rui",
+          "time": "8:00-10:05am",
+          "date": "W",
+          "building": "AB",
+          "room": "3506",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-391": {
+      "tag": "CS-391",
+      "name": "CS Special Topics",
+      "coreqs": "None",
+      "prereqs": "None",
+      "standing": "Freshman",
+      "desc": "None",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "3338",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-415": {
+      "tag": "CS-415",
+      "name": "Cryptography",
+      "coreqs": "None",
+      "prereqs": "CS-102 and CS-211",
+      "standing": "Junior",
+      "desc": "A study of modern data security. Mathematical foundations of cryptography. Classical cryptographic systems and computer attacks on these systems. Cryptographic security over unsecure communication paths: cryptographic protocols, oblivious transfers, proofs of identity, signature schemes. Modern cryptographic systems: data encryption standards, public-key systems, key generation and management. External considerations are presented and discussed: security organizations role in security, privacy considerations, import/export issues.",
+      "sections": {
+        "01": {
+          "instructor": "Kanchi, Saroja",
+          "time": "10:15-12:20pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "4103",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-441": {
+      "tag": "CS-441",
+      "name": "Foundations of Data Science",
+      "coreqs": "None",
+      "prereqs": "CS-102",
+      "standing": "Freshman",
+      "desc": "The concepts, principles, issues and techniques for big data and cloud computing are introduced in this course. This course will provide a foundation in data science based on data curation and statistical analysis. The primary goal of this course is to introduce data analysis concepts and techniques that facilitate making decisions from a rich data set. Students will investigate big data concepts, metadata creation, interpretation, and basics of information visualization.",
+      "sections": {
+        "01": {
+          "instructor": "Bai, Changxin",
+          "time": "1:20-3:25pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "4303",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-451": {
+      "tag": "CS-451",
+      "name": "Operating Systems",
+      "coreqs": "None",
+      "prereqs": "CS-231",
+      "standing": "Freshman",
+      "desc": "Operating system function and implementation; process and thread management, CPU scheduling and synchronization; real and virtual memory management, paging and page replacement algorithms, Case studies of historical and modern operating systems.",
+      "sections": {
+        "01": {
+          "instructor": "Kanchi, Saroja",
+          "time": "3:35-5:05pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "4103",
+          "avail": 24
+        },
+        "02L": {
+          "instructor": "Kanchi, Saroja",
+          "time": "3:35-5:40pm",
+          "date": "W",
+          "building": "AB",
+          "room": "4103",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-471": {
+      "tag": "CS-471",
+      "name": "Software Engineering",
+      "coreqs": "None",
+      "prereqs": "CS-102",
+      "standing": "Junior",
+      "desc": "Approaches and techniques for designing and developing large software systems. Software life cycles -- object-oriented and agile design techniques are emphasized.  Requirements, specification, design, and documentation through design patterns and modeling languages. Software quality assurance, validation and verification. Security features designed into system. Project team organization and management. Students will work in teams on a substantial software project.",
+      "sections": {
+        "01": {
+          "instructor": "Gandy, Lisa",
+          "time": "1:20-3:25pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "4507",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "CS-485": {
+      "tag": "CS-485",
+      "name": "Advanced Game Development",
+      "coreqs": "None",
+      "prereqs": "CS-102",
+      "standing": "Freshman",
+      "desc": "This course covers advanced game development techniques to create interactive 3D video games using modern game engines. Topics include game artificial intelligence, collision detection, real-time physics, procedural generation, animation, visual effects, combat systems, etc.",
+      "sections": {
+        "01": {
+          "instructor": "Turini, Giuseppe",
+          "time": "10:15-11:45am",
+          "date": "T, F",
+          "building": "AB",
+          "room": "3507",
+          "avail": 20
+        },
+        "02L": {
+          "instructor": "Turini, Giuseppe",
+          "time": "10:15-12:20pm",
+          "date": "W",
+          "building": "AB",
+          "room": "3507",
+          "avail": 20
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "EE": {
+    "EE-310": {
+      "tag": "EE-310",
+      "name": "Circuits II",
+      "coreqs": "None",
+      "prereqs": "EE-210 and (MATH-204 or MATH-204H)",
+      "standing": "Freshman",
+      "desc": "A second course in circuit analysis. Topics include: first-order and second-order transient circuit analysis, the Fourier series, three-phase circuits, resonance, filters, Bode plots and magnetically coupled circuits. ",
+      "sections": {
+        "01": {
+          "instructor": "Torfeh-Isfahani, Mohammad",
+          "time": "1:20-3:25pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2761",
+          "avail": 32
+        }
+      },
+      "credits": "4"
+    },
+    "EE-320": {
+      "tag": "EE-320",
+      "name": "Electronics I",
+      "coreqs": "EE-321",
+      "prereqs": "EE-210 and EE-211",
+      "standing": "Freshman",
+      "desc": "The basic building blocks used in electronic engineering are studied. Topics include: operational amplifiers; diodes; MOS and bipolar devices; basic transistor amplifier configurations; and MOSFET digital logic circuits.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "10:15-11:45am",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2907",
+          "avail": 16
+        }
+      },
+      "credits": "3"
+    },
+    "EE-321": {
+      "tag": "EE-321",
+      "name": "Electronics I Laboratory",
+      "coreqs": "EE-320",
+      "prereqs": "EE-210 and EE-211",
+      "standing": "Freshman",
+      "desc": "An introductory laboratory course designed to reinforce the topics in EE-320, Electronics I. Experiments include: PSPICE simulation, operational amplifiers; diodes; MOS and bipolar transistor configurations; MOSFET digital circuits.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "10:15-12:20pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2627",
+          "avail": 16
+        }
+      },
+      "credits": "1"
+    },
+    "EE-336": {
+      "tag": "EE-336",
+      "name": "Continuous-Time Signals and Systems",
+      "coreqs": "None",
+      "prereqs": "(MATH-204 or MATH-204H) and EE-210",
+      "standing": "Sophomore",
+      "desc": "Introductory continuous-time signals and systems are studied. Topics include: definitions and properties of signals and systems, convolution, differential equations, Laplace transform with applications, Fourier series, and Fourier transform of continuous-time signals with applications.",
+      "sections": {
+        "01": {
+          "instructor": "Tait, Chinwe",
+          "time": "8:00-10:05am",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2716",
+          "avail": 32
+        }
+      },
+      "credits": "4"
+    },
+    "EE-391": {
+      "tag": "EE-391",
+      "name": "PCB Design & Testing",
+      "coreqs": "None",
+      "prereqs": "None",
+      "standing": "Freshman",
+      "desc": "None",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "TBA",
+          "date": "",
+          "building": "TBA",
+          "room": "TBA",
+          "avail": 18
+        }
+      },
+      "credits": "4"
+    },
+    "EE-432": {
+      "tag": "EE-432",
+      "name": "Feedback Control Systems",
+      "coreqs": "None",
+      "prereqs": "EE-310 or EE-336",
+      "standing": "Freshman",
+      "desc": "Time and frequency domain representations of control systems are studied. Topics include: stability criteria; root locus methods; frequency response techniques, s-plane design methods. Design and evaluation of control systems are supplemented with computer aided control system design software.",
+      "sections": {
+        "01": {
+          "instructor": "Duan, Chen",
+          "time": "1:20-2:50pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2759",
+          "avail": 32
+        },
+        "02L": {
+          "instructor": "Duan, Chen",
+          "time": "1:20-3:25pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2627",
+          "avail": 16
+        },
+        "03L": {
+          "instructor": "Torfeh-Isfahani, Mohammad",
+          "time": "1:20-3:25pm",
+          "date": "R",
+          "building": "AB",
+          "room": "2627",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "EE-446": {
+      "tag": "EE-446",
+      "name": "Vector Control of AC Electric Machines",
+      "coreqs": "None",
+      "prereqs": "EE-240 and EE-310 and EE-320 and EE-321",
+      "standing": "Freshman",
+      "desc": "Methods of controlling electric machines and their applications in electric vehicles are discussed. Topics include the theory of permanent-magnet and induction machines; coordinate-frame transformations; analysis and tuning of torque and speed control systems; modeling and dynamics of electric drives and vehicles, power-electronic devices, power-electronic circuits and switching schemes; rotor-flux oriented vector control; regenerative braking; and rotor-flux position-sensing methods. Machine and vehicle models will be developed using MATLAB Simulink. A low-voltage permanent-magnet machine and power-electronic inverter will be analyzed and tested.",
+      "sections": {
+        "01": {
+          "instructor": "Taylor, Allan",
+          "time": "3:35-5:05pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2716",
+          "avail": 16
+        },
+        "02L": {
+          "instructor": "Taylor, Allan",
+          "time": "3:35-5:40pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2822C",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "EE-490": {
+      "tag": "EE-490",
+      "name": "Senior Electrical Engineering Design Project",
+      "coreqs": "None",
+      "prereqs": "CE-320 and EE-240 and EE-310 and EE-320 and EE-321 and (EE-336 or EE-338)",
+      "standing": "Senior",
+      "desc": " Students are prepared for engineering practice through a major design experience based on knowledge and skills acquired in earlier course work. They work in teams to creatively solve an open-ended engineering design problem and develop a prototype system to meet a given specification. The design will emphasize electrical engineering, but will be multidisciplinary. The specification requires the design solution to incorporate appropriate engineering standards with consideration of multiple constraints such as: public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors. Designs are documented in a professional manner and presented publicly for a range of audiences. ",
+      "sections": {
+        "01": {
+          "instructor": "Duan, Chen",
+          "time": "3:35-5:40pm",
+          "date": "T",
+          "building": "AB",
+          "room": "2911",
+          "avail": 24
+        },
+        "02L": {
+          "instructor": "Duan, Chen",
+          "time": "3:35-5:40pm",
+          "date": "F",
+          "building": "AB",
+          "room": "2820",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "IME": {
+    "IME-321": {
+      "tag": "IME-321",
+      "name": "Operations Research - Deterministic Models",
+      "coreqs": "None",
+      "prereqs": "IME-200",
+      "standing": "Freshman",
+      "desc": "This course introduces the students to mathematical modeling and quantitative methods and techniques for effective decision–making. In this course, the students learn how to formulate, analyze, and solve mathematical models that represent real-world problems. Topics include deterministic systems optimization; review of linear algebra, linear programming, sensitivity analysis, transportation network models, assignment problems, integer programming, and introductory topics in nonlinear programming.",
+      "sections": {
+        "01": {
+          "instructor": "Watchorn, Andrew",
+          "time": "8:00-10:05am",
+          "date": "M, R",
+          "building": "AB",
+          "room": "1210",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "IME-332": {
+      "tag": "IME-332",
+      "name": "Engineering Statistics",
+      "coreqs": "None",
+      "prereqs": "MATH-258",
+      "standing": "Sophomore 2",
+      "desc": "This course introduces the students to statistics applications in engineering. Topics include exploratory data analysis, sampling methods, inferential statistics for one and two population cases, goodness of fit tests, regression analysis and non-parametric statistics. Statistical software such as Minitab is used throughout the course. ",
+      "sections": {
+        "01": {
+          "instructor": "Ghazi Nezami, Farnaz",
+          "time": "1:20-3:25pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "1210",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "IME-403": {
+      "tag": "IME-403",
+      "name": "Computer Numerical Control Machining",
+      "coreqs": "None",
+      "prereqs": "IME-100",
+      "standing": "Junior 2",
+      "desc": "This course introduces the fundamentals of computer numerical control (CNC) programming and computer-aided manufacturing (CAM) are introduced. The fundamental theoretical and operational concepts of machining are also presented. The course focuses on the programming of cutting operations; tool materials, selection, and uses. Topics include G-code programming, Introduction to CAM software, Taylor’s tool life model, Criteria for tool selection, and the Orthogonal Cutting Model. Laboratories use CNC machine tools for programming and cutting, and are designed to illustrate theoretical concepts and methods for solving practical engineering machining problems.",
+      "sections": {
+        "01": {
+          "instructor": "Van Cura, Daniel",
+          "time": "1:20-2:50pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "1210",
+          "avail": 20
+        }
+      },
+      "credits": "4"
+    },
+    "IME-408": {
+      "tag": "IME-408",
+      "name": "Industrial Robotics",
+      "coreqs": "None",
+      "prereqs": "MECH-100 and IME-100",
+      "standing": "Junior 2",
+      "desc": "Basic concepts of robotic system theory and applications are presented. Human and robotic system interface with diverse real environments are discussed. Human and robotic safety is stressed. Advantages, limitations, business case justifications of investment, and benefits of robotic systems for lean and quality operations are emphasized. Flexible manufacturing operations, work cell design, cycle time, work path, end-effectors, and collaborative robots are covered. Both hands-on and simulation of industrial robotic systems are included.",
+      "sections": {
+        "01": {
+          "instructor": "Edwards, William",
+          "time": "1:20-3:25pm",
+          "date": "W",
+          "building": "AB",
+          "room": "1716",
+          "avail": 12
+        }
+      },
+      "credits": "4"
+    },
+    "IME-422": {
+      "tag": "IME-422",
+      "name": "Simulation",
+      "coreqs": "None",
+      "prereqs": "MATH-258",
+      "standing": "Freshman",
+      "desc": "This course covers modeling of dynamic systems and uses virtual and discrete event simulation (DES) to analyze engineering design problems. Students use modern simulation software to practice the applications in production/manufacturing/service and other areas related to Industrial and Manufacturing Engineering.",
+      "sections": {
+        "01": {
+          "instructor": "Edwards, William",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "1210",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "IME-453": {
+      "tag": "IME-453",
+      "name": "Supply Chain Design",
+      "coreqs": "None",
+      "prereqs": "IME-452",
+      "standing": "Freshman",
+      "desc": "This course introduces principles of supply chain and logistics network from an engineering perspective. Students gain an understanding of the decision-making process required to design and manage the global supply chain. The key concepts such as inventory planning, warehousing, logistics and distribution networks, facility location planning, probabilistic project management, and sustainability are covered in this course.",
+      "sections": {
+        "01": {
+          "instructor": "Ghazi Nezami, Farnaz",
+          "time": "10:15-12:20pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "1210",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "IME-454": {
+      "tag": "IME-454",
+      "name": "Senior Design Project",
+      "coreqs": "None",
+      "prereqs": "None",
+      "standing": "Senior II",
+      "desc": "This course provides the student with the challenge of integrating and synthesizing general engineering knowledge, particularly in industrial and manufacturing disciplines. Students apply the engineering design process to creatively solve real-world, open-ended problems in a team setting. The course is intended to be taken in the students’ final term on campus.",
+      "sections": {
+        "01": {
+          "instructor": "Nam, Chang",
+          "time": "1:20-3:25pm",
+          "date": "W",
+          "building": "AB",
+          "room": "1210",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "IME-465": {
+      "tag": "IME-465",
+      "name": "Human-Computer Interaction and Interface Design",
+      "coreqs": "None",
+      "prereqs": "None",
+      "standing": "Junior",
+      "desc": "This multidisciplinary course provides theoretical and practical skills that are needed to design, develop, and evaluate human interaction with computer and machine interfaces and virtual environments. Course topics are anchored around fundamental cognitive human capabilities and their relationship to product design and testing. Example topics include human psychological capabilities, rapid prototyping, usability testing, and experimental evaluation of input devices. Students employ the user-centered design process with hands-on experimentation and evaluation in a term design project. This course is multidisciplinary, so students from all majors are encouraged to participate and programming skills are not required. ",
+      "sections": {
+        "01": {
+          "instructor": "Maier, Torsten",
+          "time": "3:35-5:05pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "1210",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "IME-471": {
+      "tag": "IME-471",
+      "name": "Quality Control",
+      "coreqs": "None",
+      "prereqs": "MATH-258",
+      "standing": "Junior",
+      "desc": "The basics of modern methods of quality control and improvement that are used in the manufacturing and service industries are covered in this course. It includes quality philosophy and fundamentals, statistical methods of quality improvement, concept of variation and its reduction, control charts, and Statistical Process Control (SPC). Deming’s quality and management concepts will also be discussed.",
+      "sections": {
+        "01": {
+          "instructor": "Edwards, William",
+          "time": "10:15-12:20pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "1210",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "MGMT": {
+    "MGMT-419": {
+      "tag": "MGMT-419",
+      "name": "Project Management",
+      "coreqs": "None",
+      "prereqs": "None",
+      "standing": "Junior",
+      "desc": "This course covers managing projects within an organizational context, including the processes related to initiating, planning, executing, controlling, reporting, and closing a project. Concepts such as project integration, scope, time, cost, quality control, and risk management are highlighted. Identifying project champions, working with user teams, training, and documentation are key concepts of project management that are detailed in the course.",
+      "sections": {
+        "01": {
+          "instructor": "Navarre, Lawrence",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "4309",
+          "avail": 30
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "MATH": {
+    "MATH-305": {
+      "tag": "MATH-305",
+      "name": "Numerical Methods and Matrices",
+      "coreqs": "None",
+      "prereqs": "MATH-204 or MATH-204H",
+      "standing": "Sophomore",
+      "desc": "An introduction to numerical methods including the study of iterative solutions of equations, interpolation, curve fitting, numerical differentiation and integration, and the solution of ordinary differential equations. An introduction to matrices and determinants; application to the solution of linear systems.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "2:25-3:25pm",
+          "date": "M, T, R, F",
+          "building": "AB",
+          "room": "4104",
+          "avail": 30
+        },
+        "02": {
+          "instructor": "STAFF",
+          "time": "9:05-10:05am",
+          "date": "M, T, R, F",
+          "building": "AB",
+          "room": "4312",
+          "avail": 36
+        }
+      },
+      "credits": "4"
+    },
+    "MATH-307": {
+      "tag": "MATH-307",
+      "name": "Matrix Algebra",
+      "coreqs": "MATH-102",
+      "prereqs": "MATH-101 or MATH-101X",
+      "standing": "Freshman",
+      "desc": "A study of matrix concepts including such topics as basic algebraic operations, determinants, inversion, solution of systems of linear equations, vector spaces, basis and dimension, eigenvalues, and eigenvectors.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "4:40-5:40pm",
+          "date": "M, T, R, F",
+          "building": "AB",
+          "room": "2907",
+          "avail": 36
+        }
+      },
+      "credits": "4"
+    },
+    "MATH-313": {
+      "tag": "MATH-313",
+      "name": "Boundary Value Problems",
+      "coreqs": "None",
+      "prereqs": "MATH-204 or MATH-204H",
+      "standing": "Sophomore 2",
+      "desc": "An introduction to linear partial differential equations (PDE’s) and basic techniques of applied mathematics used to solve initial, boundary value problems associated with these equations. Topics include: derivation of some of the fundamental PDE’s’ and boundary conditions that arise in science and engineering; Fourier Series; Sturm-Liouville Systems including eigenvalues, eigenfunctions and eigenfunction expansions; the separation of variables techniques; Fourier Transforms. Applications to problems of science and engineering will be given throughout the course.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "10:15-11:15am",
+          "date": "M, T, R, F",
+          "building": "AB",
+          "room": "2225",
+          "avail": 36
+        }
+      },
+      "credits": "4"
+    },
+    "MATH-412": {
+      "tag": "MATH-412",
+      "name": "Complex Variables",
+      "coreqs": "None",
+      "prereqs": "MATH-203 or MATH-203H or MATH-203X",
+      "standing": "Sophomore",
+      "desc": "An introduction to the theory of complex variables. Includes basic algebra of complex numbers, analytic functions and the Cauchy-Riemann equations, elementary transformations, complex integration, the Cauchy integral formulas, Taylor and Laurent series, and the theory of residues.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2759",
+          "avail": 36
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "MECH": {
+    "MECH-311": {
+      "tag": "MECH-311",
+      "name": "Introduction to Mechanical System Design",
+      "coreqs": "None",
+      "prereqs": "MECH-100 and MECH-210 and (MECH-231L or EE-211)",
+      "standing": "Freshman",
+      "desc": "The objective of the course is to teach fundamentals of machine elements and mechatronics design, with an emphasis on product design and fabrication. Design, analysis and fabrication of prototype mechatronic systems and devices are completed. Mechanical designs concepts including transmission methods, force and torque analysis, mechanisms and simulation is covered. Formal design processes such as brainstorming and concept-tree development are utilized. Intellectual property law pertinent to design and invention is covered. The synergistic combination of sensors, actuators and controls technologies to create functionally “smart” and adaptive devices is implemented. Sensors and actuator technologies are covered. The course culminates with an open-ended project to design and fabricate a mechatronic system using basic machining equipment and a programmable controller.",
+      "sections": {
+        "02": {
+          "instructor": "George, Christopher",
+          "time": "3:35-5:40pm",
+          "date": "T, F",
+          "building": "MC",
+          "room": "2116",
+          "avail": 18
+        },
+        "01": {
+          "instructor": "George, Christopher",
+          "time": "1:20-3:25pm",
+          "date": "T, F",
+          "building": "MC",
+          "room": "2116",
+          "avail": 18
+        }
+      },
+      "credits": "4"
+    },
+    "MECH-428": {
+      "tag": "MECH-428",
+      "name": "Bio and Renewable Energy",
+      "coreqs": "None",
+      "prereqs": "PHYS-114 and PHYS-115",
+      "standing": "Freshman",
+      "desc": "This course provides an opportunity for the students to study bio and renewable energy and their applications around the globe. The students also perform hands-on experiments in several areas of sustainable energy. The fundamental principles required will be provided prior to laboratory experimentation. Topics covered include bur are not limited to solar thermal energy and photovoltaics, wind energy, energy storage, bioenergy used for power, transportation and heating, PEM fuel cells, and alternative energy vehicles.",
+      "sections": {
+        "01": {
+          "instructor": "Lemke, Brenda",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "MC",
+          "room": "2240",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "MECH-442": {
+      "tag": "MECH-442",
+      "name": "Chassis Systems",
+      "coreqs": "None",
+      "prereqs": "MECH-330",
+      "standing": "Freshman",
+      "desc": "The objective of this course is to provide a comprehensive experience in the area of automotive chassis engineering. The course covers tires, suspensions and steering. A vehicle system approach is used for learning. Vehicle dynamics concepts and improvement approaches are integrated into the course content. Professional computer-aided engineering tools are introduced (e.g. CarSim, SuspensionSim) and applied to the areas of suspension analysis and overall vehicle dynamics performance. Students work in teams to complete a chassis design project applicable to passenger cars or light trucks.",
+      "sections": {
+        "01": {
+          "instructor": "Mazzei Jr., Arnaldo",
+          "time": "10:15-12:20pm",
+          "date": "M, R",
+          "building": "MC",
+          "room": "2130",
+          "avail": 24
+        }
+      },
+      "credits": "4"
+    },
+    "MECH-448": {
+      "tag": "MECH-448",
+      "name": "Vehicle Design Project",
+      "coreqs": "None",
+      "prereqs": "MECH-300 and MECH-320 and MECH-330",
+      "standing": "Senior",
+      "desc": "This course provides an engineering project experience that is representative of automotive industry projects, except it is scaled down such that it can be performed in one school term. The project begins with setting specific and measurable goals in a project statement. This is followed by researching and brainstorming, producing design alternatives, selecting concepts, and developing and analyzing concepts. Project updates are required throughout the course. A mid-term and final oral presentation are mandatory, along with the submission of a final written report. This course satisfies the ME Senior Design Project requirement.",
+      "sections": {
+        "01": {
+          "instructor": "AbdulNour, Bashar",
+          "time": "3:35-5:40pm",
+          "date": "T, F",
+          "building": "MC",
+          "room": "1107",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    },
+    "MECH-482": {
+      "tag": "MECH-482",
+      "name": "Mechanics and Design Simulation of Fiber-Reinforced Composite Materials",
+      "coreqs": "None",
+      "prereqs": "MECH-300",
+      "standing": "Freshman",
+      "desc": "The properties, mechanics, and design simulation aspects of fiber-reinforced composite materials are covered in this course. Topics include: constituents and interfacial bonding, microstructure and micromechanics, theory of anisotropy, classical laminate theory, material characterization, failure and damage, manufacturing techniques, composite structure design, and introduction of nanocomposite.",
+      "sections": {
+        "01": {
+          "instructor": "Dong, Yaomin",
+          "time": "3:35-5:40pm",
+          "date": "T, F",
+          "building": "MC",
+          "room": "1106",
+          "avail": 14
+        }
+      },
+      "credits": "4"
+    },
+    "MECH-495": {
+      "tag": "MECH-495",
+      "name": "Senior Design Project",
+      "coreqs": "None",
+      "prereqs": "MECH-300 and MECH-312 and MECH-322 and MECH-330",
+      "standing": "Senior",
+      "desc": "The objective of this course is to provide a comprehensive capstone design experience that includes a design project in mechanical systems, or dynamic systems, or energy systems, based on knowledge and skills acquired in earlier coursework. The project begins with setting specific and measurable goals in a project statement. This is followed by researching and brainstorming, producing design alternatives, selecting concepts, and developing and analyzing concepts. Students work in teams to design and develop a prototype or a conceptual design to meet given specifications and to incorporate relevant engineering standards. Project updates are required throughout the course. ",
+      "sections": {
+        "01": {
+          "instructor": "Hoff, Craig",
+          "time": "1:20-3:25pm",
+          "date": "T, F",
+          "building": "MC",
+          "room": "1106",
+          "avail": 16
+        },
+        "02": {
+          "instructor": "Nasr, Karim",
+          "time": "1:20-3:25pm",
+          "date": "T, F",
+          "building": "MC",
+          "room": "1107",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    }
+  },
+  "PHYS": {
+    "PHYS-302": {
+      "tag": "PHYS-302",
+      "name": "Vibration, Sound and Light",
+      "coreqs": "MATH-204",
+      "prereqs": "PHYS-224 and PHYS-225 and (MATH-203 or MATH-203H or MATH-203X)",
+      "standing": "Sophomore 2",
+      "desc": "The phenomena of vibration and waves provide a fundamental background necessary to approach a wide variety of applications in physics and engineering. The first part of this course will introduce students to the basics of vibration, including the effects of real damping, response to driving forces, nonlinear oscillation and application to several acoustical, optical, electrical, and mechanical systems. After this introduction to vibration, the course will focus on wave motion. The behavior of non-dispersive waves in solids, acoustic sound waves, electromagnetic waves, and transverse waves on a string will be discussed along with an introduction to Fourier analysis as a means of analyzing wave signals. Non-dispersive waves in non-uniform media will also be explored with applications to several different types of waves occurring in nature. Basic wave phenomena including reflection, refraction, diffraction and interference will be discussed with respect to a variety of wave types. Students successfully completing this course will be well prepared for further study in optics, acoustics, vibration, and electromagnetic wave propagation.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "10:15-12:20pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2601",
+          "avail": 20
+        }
+      },
+      "credits": "4"
+    },
+    "PHYS-412": {
+      "tag": "PHYS-412",
+      "name": "Theoretical Mechanics",
+      "coreqs": "None",
+      "prereqs": "PHYS-114 and (MATH-204 or MATH-204H) and (EP-235 or MATH-305)",
+      "standing": "Freshman",
+      "desc": "A look at classical physics. Topics include the projectile motion with air resistance, simple harmonic and nonlinear oscillation, central force motion, Kepler's laws and planetary motion, motion in noninertial reference frames, motion of systems of particles, rigid body motion, Lagrangian mechanics, and Hamiltonian theory. Computational methods for solving advanced physics problems will also be introduced.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "3:35-5:40pm",
+          "date": "T, F",
+          "building": "AB",
+          "room": "2601",
+          "avail": 20
+        }
+      },
+      "credits": "4"
+    },
+    "PHYS-462": {
+      "tag": "PHYS-462",
+      "name": "Quantum Mechanics",
+      "coreqs": "None",
+      "prereqs": "(MATH-204 or MATH-204H) and (MATH-305 or MATH-307) and PHYS-362",
+      "standing": "Junior",
+      "desc": "Intoduction to the fundamentals of non-relativistic quantum mechanics. Topics include: photons, matter waves, the Bohr model, the time-independent Schrodinger equation (and its application to one dimensional potentials), quantization of angular momentum, spin, the hydrogen atom, multi-electron atoms, and perturbation theory.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "3:35-5:40pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2903",
+          "avail": 20
+        }
+      },
+      "credits": "4"
+    },
+    "PHYS-477": {
+      "tag": "PHYS-477",
+      "name": "Optics and Lab",
+      "coreqs": "None",
+      "prereqs": "(MATH-204 or MATH-204H) and PHYS-302",
+      "standing": "Junior",
+      "desc": "A study of geometrical and physical optics. Topics in geometrical optics include phenomena of reflection, refraction, total internal reflection and their application to imaging systems consisting of lenses and mirrors. Physical optics will start from the electromagnetic wave nature of light and will focus on such wave-like phenomena as optical interference, diffraction, polarization, and dispersion of light. Limited topics in interaction of light with matter, crystal optics, optical properties of materials and their applications in such areas as optoelectronics, photonics and fiber optics will also be addressed. The lab investigates optical component analysis, ray tracing, interferometry, diffraction, polarization, interference, optical fibers and other special topics.",
+      "sections": {
+        "01": {
+          "instructor": "STAFF",
+          "time": "10:15-12:20pm",
+          "date": "M, R",
+          "building": "AB",
+          "room": "2617",
+          "avail": 16
+        },
+        "02L": {
+          "instructor": "STAFF",
+          "time": "10:15-12:20pm",
+          "date": "W",
+          "building": "AB",
+          "room": "2617",
+          "avail": 16
+        }
+      },
+      "credits": "4"
+    }
+  }
+}

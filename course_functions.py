@@ -4,6 +4,7 @@ Created by Seth Christie
 
 Module course_functions.py
 """
+
 import json
 import warnings
 
@@ -177,16 +178,13 @@ def getSections(df, course):
     return sections
 
 
-def getMEElectives(filename):
+def getMEElectives(courses):
     """
     Function to return a dictionary containing all courses eligible as ME Electives
-    :param filename: Name of the json file containing all courses
+    :param courses: Dictionary containing all the courses
     :return: Dictionary containing all ME Elective options
     """
     electives = {}
-
-    with open(filename, 'r', encoding='utf-8') as file:
-        courses = json.load(file)
 
     for tag in courses.keys():
         courseblock = {}

@@ -17,14 +17,15 @@ import main
 class MainFrame(ttk.Frame):
     def __init__(self, parent):
         super().__init__(parent)
+        self.parent = parent
         self.lift()
 
         # Create StringVars
-        self.STR_TERM = tk.StringVar(value=main.DEFAULT_TERM)
-        self.STR_ARGOS = tk.StringVar(value=main.DEFAULT_ARGOS)
+        self.STR_TERM = tk.StringVar(value=parent.DEFAULT_TERM)
+        self.STR_ARGOS = tk.StringVar(value='')
         self.STR_ARGOS_STS = tk.StringVar(value='')
-        self.STR_EXPORT_FILETYPE = tk.StringVar(value=main.DEFAULT_EXPORT)
-        self.STR_LEVEL = tk.StringVar(value=main.DEFAULT_LEVEL)
+        self.STR_EXPORT_FILETYPE = tk.StringVar(value=parent.DEFAULT_EXPORT)
+        self.STR_LEVEL = tk.StringVar(value=parent.DEFAULT_LEVEL)
         self.CHECK_EXPORTALL = tk.BooleanVar(value=True)
         self.CHECK_EXPORTME = tk.BooleanVar(value=False)
         self.CHECK_EXPORTIDV = tk.BooleanVar(value=False)
@@ -34,18 +35,18 @@ class MainFrame(ttk.Frame):
         options_cb = {'padx': 10, 'pady': 5, 'column': 0, 'sticky': 'w', 'columnspan': 2}
 
         # Title
-        self.title_label = ttk.Label(self, text=main.APP_TITLE, style='Heading.TLabel')
+        self.title_label = ttk.Label(self, text=parent.APP_TITLE, style='Heading.TLabel')
         self.title_label.grid(row=0, column=0, pady=20, columnspan=3)
 
         # Term selection
         self.term_label = ttk.Label(self, text='Term:', style='Heading2.TLabel')
-        self.term_entry = ttk.Entry(self, font=(main.APP_FONT, '11'), width=35, textvariable=self.STR_TERM)
+        self.term_entry = ttk.Entry(self, font=(parent.APP_FONT, '11'), width=35, textvariable=self.STR_TERM)
         self.term_label.grid(row=1, column=0, **options, sticky='w')
         self.term_entry.grid(row=1, column=1, **options, sticky='e')
 
         # Argos file selection
         self.argos_label = ttk.Label(self, text='Argos File:', style='Heading2.TLabel')
-        self.argos_entry = ttk.Entry(self, font=(main.APP_FONT, '11'), width=35, textvariable=self.STR_ARGOS)
+        self.argos_entry = ttk.Entry(self, font=(parent.APP_FONT, '11'), width=35, textvariable=self.STR_ARGOS)
         self.argos_browse = main.AppButton(self, text='Browse', command=self.browse_argos, width=120, height=40,
                                            style='Normal.TButton')
         self.argos_label.grid(row=2, column=0, **options, sticky='w')
@@ -57,10 +58,10 @@ class MainFrame(ttk.Frame):
         self.argos_sts_label.grid(row=3, column=1, **options)
 
         # Export Filetype
-        self.option_add("*TCombobox*Listbox*Font", (main.APP_FONT, '12'))
+        self.option_add("*TCombobox*Listbox*Font", (parent.APP_FONT, '12'))
         self.filetype_label = ttk.Label(self, text='Export Filetype:', style='Heading2.TLabel')
-        self.filetype_check = ttk.Combobox(self, state='readonly', font=(main.APP_FONT, '12'),
-                                           values=main.EXPORT_FILETYPES,
+        self.filetype_check = ttk.Combobox(self, state='readonly', font=(parent.APP_FONT, '12'),
+                                           values=parent.EXPORT_FILETYPES,
                                            textvariable=self.STR_EXPORT_FILETYPE, width=30)
         self.filetype_label.grid(row=4, column=0, **options, sticky='w')
         self.filetype_check.grid(row=4, column=1, **options, sticky='e')
@@ -110,7 +111,6 @@ class MainFrame(ttk.Frame):
         Run the Course Tool
         :return: None
         """
-        config = main.readConfig('data/config.yml')
         catalog = []
         catalogURL = ''
         term = self.STR_TERM.get().replace('Summer', 'S').replace('Winter', 'W')
@@ -118,7 +118,7 @@ class MainFrame(ttk.Frame):
         filetype = 'xlsx'
 
         # Select correct filetype
-        match self.STR_ARGOS_STS.get():
+        match self.STR_EXPORT_FILETYPE.get():
             case 'Excel':
                 filetype = 'xlsx'
             case 'YAML':
@@ -129,21 +129,23 @@ class MainFrame(ttk.Frame):
         # Select correct course level
         match self.STR_LEVEL.get():
             case 'Undergrad':
-                catalog = config[0]
-                catalogURL = config[2]
+                catalog = self.parent.UNDERGRAD_TAGS
+                catalogURL = self.parent.UNDERGRAD_URL
             case 'Grad':
-                catalog = config[1]
-                catalogURL = config[3]
+                catalog = self.parent.GRAD_TAGS
+                catalogURL = self.parent.GRAD_URL
 
         # Get course data
         data = course_functions.getCourseData(self.STR_ARGOS.get(), catalog, catalogURL, self.CHECK_EXPORTALL.get())
         export_name = f'{term}_{self.STR_LEVEL.get()}.{filetype}'
 
+        # Export initial course data
         course_functions.exportCourses(data, filetype, f'exports/{export_name}')
 
         # Special options
         if self.CHECK_EXPORTME:
-            course_functions.getMEElectives(f'exports/{export_name}')
+            mech_dict = course_functions.getMEElectives(data)
+            course_functions.exportCourses(mech_dict, filetype, f'exports/{term}_mechelv.{filetype}')
 
         if self.CHECK_EXPORTADV:
             pass  # TODO export advanced electives

@@ -1,3 +1,11 @@
+settings:
+  title: "Course Tool"
+  version: "1.0"
+  lang: "EN"
+  font: "Helvetica"
+  export_filetypes: [
+    'Excel', 'JSON', 'YAML'
+  ]
 catalog:
   undergrad:
     url: "https://catalog.kettering.edu/coursesaz/undergrad/"
@@ -11,3 +19,7 @@ catalog:
       'ACCT', 'BUSN', 'COMM', 'CE', 'CS', 'ECE', 'EE', 'ENGR', 'FINC', 'IME', 'ISYS', 'MFGO', 'MGMT', 'MKRT', 'MATH',
       'MECH'
     ]
+defaults:
+  term: "Summer 2024"
+  export_type: "Excel"
+  level: "Undergrad"

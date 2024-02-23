@@ -4,6 +4,7 @@ Created by Seth Christie
 
 Module main.py
 """
+import configparser
 import tkinter as tk
 import sv_ttk
 from tkinter import ttk
@@ -16,16 +17,6 @@ import interfaces
 # App constants
 APP_WIDTH = 850
 APP_HEIGHT = 800
-APP_TITLE = 'Course Tool'
-APP_VERSION = 'v1.0'
-APP_FONT = 'Helvetica'
-EXPORT_FILETYPES = ['Excel', 'JSON', 'YAML']
-
-# String defaults
-DEFAULT_TERM = 'Winter 2024'
-DEFAULT_ARGOS = 'C:/Users/schri/OneDrive/Documents/Code Projects/CourseTool_Demo/summer24_all.csv'
-DEFAULT_EXPORT = 'Excel'
-DEFAULT_LEVEL = 'Undergrad'
 
 
 # ---------------------------------------------------- functions -------------------------------------------------------
@@ -46,11 +37,8 @@ def readConfig(filename):
     """
     with open(filename, 'r') as file:
         cfg = yaml.safe_load(file)
-        undergrad_catalog = cfg['catalog']['undergrad']['tags']
-        grad_catalog = cfg['catalog']['undergrad']['tags']
-        undergrad_url = cfg['catalog']['undergrad']['url']
-        grad_url = cfg['catalog']['grad']['url']
-    return [undergrad_catalog, grad_catalog, undergrad_url, grad_url]
+
+    return cfg
 
 
 # ----------------------------------------------------- classes --------------------------------------------------------
@@ -58,6 +46,22 @@ def readConfig(filename):
 class Application(tk.Tk):
     def __init__(self):
         super().__init__()
+
+        # Read config file
+        self.config = readConfig('data/config.yml')
+
+        self.APP_TITLE = self.config['settings']['title']
+        self.APP_VERSION = self.config['settings']['version']
+        self.APP_LANG = self.config['settings']['lang']
+        self.APP_FONT = self.config['settings']['font']
+        self.EXPORT_FILETYPES = self.config['settings']['export_filetypes']
+        self.UNDERGRAD_URL = self.config['catalog']['undergrad']['url']
+        self.UNDERGRAD_TAGS = self.config['catalog']['undergrad']['tags']
+        self.GRAD_URL = self.config['catalog']['grad']['url']
+        self.GRAD_TAGS = self.config['catalog']['grad']['tags']
+        self.DEFAULT_TERM = self.config['defaults']['term']
+        self.DEFAULT_EXPORT = self.config['defaults']['export_type']
+        self.DEFAULT_LEVEL = self.config['defaults']['level']
 
         # Set theme to dark
         sv_ttk.set_theme('dark')
@@ -71,17 +75,17 @@ class Application(tk.Tk):
 
         # Configure the root window
         self.resizable(False, False)
-        self.title(APP_TITLE)
+        self.title(self.APP_TITLE)
         self.iconbitmap('images/icon.ico')
 
         # Configure style
         self.style = ttk.Style()
-        self.style.configure('Heading.TLabel', font=(APP_FONT, 18, 'bold'))
-        self.style.configure('Heading2.TLabel', font=(APP_FONT, 12, 'bold'))
-        self.style.configure('Normal.TLabel', font=(APP_FONT, 12))
-        self.style.configure('Normal.TButton', font=(APP_FONT, 12))
-        self.style.configure('Normal.TCheckbutton', font=(APP_FONT, 12))
-        self.style.configure('Version.TLabel', font=(APP_FONT, 10))
+        self.style.configure('Heading.TLabel', font=(self.APP_FONT, 18, 'bold'))
+        self.style.configure('Heading2.TLabel', font=(self.APP_FONT, 12, 'bold'))
+        self.style.configure('Normal.TLabel', font=(self.APP_FONT, 12))
+        self.style.configure('Normal.TButton', font=(self.APP_FONT, 12))
+        self.style.configure('Normal.TCheckbutton', font=(self.APP_FONT, 12))
+        self.style.configure('Version.TLabel', font=(self.APP_FONT, 10))
 
         # Add frames to container
         self.mainframe = interfaces.MainFrame(self)
