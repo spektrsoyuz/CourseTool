@@ -7,7 +7,6 @@ Module course_functions.py
 
 import json
 import warnings
-
 import pandas as pd
 import requests
 import yaml
@@ -15,6 +14,7 @@ from bs4 import BeautifulSoup, MarkupResemblesLocatorWarning
 from styleframe import StyleFrame
 
 warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 cfilter = ['COMM', 'ECON', 'BUSN', 'MGMT', 'HIST', 'HUMN', 'CILE', 'LA', 'LIT', 'PHIL', 'SSCI', '212', '231',
            'MECH-231L', 'EE-212', 'MECH-300', 'MECH-307', 'MECH-310', 'MECH-312', 'MECH-320', 'MECH-322',

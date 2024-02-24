@@ -7,9 +7,12 @@ Module interfaces.py
 import tkinter as tk
 from tkinter import ttk
 from tkinter import filedialog
+import warnings
 
 import course_functions
 import main
+
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
 # ----------------------------------------------------- classes --------------------------------------------------------
@@ -89,17 +92,29 @@ class MainFrame(ttk.Frame):
         self.spacing2.grid(row=10, column=0, pady=10)
 
         # Main buttons
-        self.run_button = main.AppButton(self, text='Run Tool', command=self.run, style='Normal.TButton', width=250,
-                                         height=75)
+        self.run_button = main.AppButton(self, text='Run Tool', command=self.run, style='Large.TButton', width=220,
+                                         height=70)
         self.run_button.grid(row=11, column=0, **options, columnspan=3, sticky='s')
 
     def show_frame(self):
+        """
+        Function to display the current frame
+        :return: None
+        """
         self.pack(padx=10, pady=10)
 
     def hide_frame(self):
+        """
+        Function to hide the current frame
+        :return: None
+        """
         self.pack_forget()
 
     def browse_argos(self):
+        """
+        Function to create a file browse window for the Argos file
+        :return: None
+        """
         file = filedialog.askopenfilename(filetypes=[('CSV files', '*.csv')])
         if file.endswith('.csv'):
             self.STR_ARGOS.set(file)
@@ -145,7 +160,7 @@ class MainFrame(ttk.Frame):
         # Special options
         if self.CHECK_EXPORTME:
             mech_dict = course_functions.getMEElectives(data)
-            course_functions.exportCourses(mech_dict, filetype, f'exports/{term}_mechelv.{filetype}')
+            course_functions.exportCourses(mech_dict, filetype, f'exports/{term}_MECH.{filetype}')
 
         if self.CHECK_EXPORTADV:
             pass  # TODO export advanced electives

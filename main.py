@@ -4,15 +4,16 @@ Created by Seth Christie
 
 Module main.py
 """
-import configparser
 import tkinter as tk
-import sv_ttk
 from tkinter import ttk
 from ctypes import windll
-
 import yaml
+import warnings
+import sv_ttk
 
 import interfaces
+
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # App constants
 APP_WIDTH = 850
@@ -50,6 +51,7 @@ class Application(tk.Tk):
         # Read config file
         self.config = readConfig('data/config.yml')
 
+        # Load config into constants
         self.APP_TITLE = self.config['settings']['title']
         self.APP_VERSION = self.config['settings']['version']
         self.APP_LANG = self.config['settings']['lang']
@@ -86,6 +88,7 @@ class Application(tk.Tk):
         self.style.configure('Normal.TButton', font=(self.APP_FONT, 12))
         self.style.configure('Normal.TCheckbutton', font=(self.APP_FONT, 12))
         self.style.configure('Version.TLabel', font=(self.APP_FONT, 10))
+        self.style.configure('Large.TButton', font=(self.APP_FONT, 16))
 
         # Add frames to container
         self.mainframe = interfaces.MainFrame(self)
