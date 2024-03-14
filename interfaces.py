@@ -127,7 +127,7 @@ class MainFrame(ttk.Frame):
         :return: None
         """
         catalog = []
-        catalogURL = ''
+        catalog_url = ''
         term = self.STR_TERM.get().replace('Summer', 'S').replace('Winter', 'W')
         term = term.replace(' ', '')
         filetype = 'xlsx'
@@ -145,22 +145,22 @@ class MainFrame(ttk.Frame):
         match self.STR_LEVEL.get():
             case 'Undergrad':
                 catalog = self.parent.UNDERGRAD_TAGS
-                catalogURL = self.parent.UNDERGRAD_URL
+                catalog_url = self.parent.UNDERGRAD_URL
             case 'Grad':
                 catalog = self.parent.GRAD_TAGS
-                catalogURL = self.parent.GRAD_URL
+                catalog_url = self.parent.GRAD_URL
 
         # Get course data
-        data = course_functions.getCourseData(self.STR_ARGOS.get(), catalog, catalogURL, self.CHECK_EXPORTALL.get())
+        data = course_functions.get_course_data(self.STR_ARGOS.get(), catalog, catalog_url, self.CHECK_EXPORTALL.get())
         export_name = f'{term}_{self.STR_LEVEL.get()}.{filetype}'
 
         # Export initial course data
-        course_functions.exportCourses(data, filetype, f'exports/{export_name}')
+        course_functions.export_courses(data, filetype, f'exports/{export_name}')
 
         # Special options
         if self.CHECK_EXPORTME:
-            mech_dict = course_functions.getMEElectives(data)
-            course_functions.exportCourses(mech_dict, filetype, f'exports/{term}_MECH.{filetype}')
+            mech_dict = course_functions.get_mech_electives(data)
+            course_functions.export_courses(mech_dict, filetype, f'exports/{term}_MECH.{filetype}')
 
         if self.CHECK_EXPORTADV:
             pass  # TODO export advanced electives

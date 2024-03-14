@@ -39,25 +39,25 @@ def strip_html(html_text):
     return plain_text
 
 
-def getCourseData(csvFile, catalog, catalogURL, includeAll):
+def get_course_data(csv_file, catalog, catalog_url, include_all):
     """
     Function to parse through Kettering Courses A-Z and the Kettering
     Argos Class Schedule to create a dictionary containing available courses
     for a given term.
-    :param csvFile: Specified csv file from Argos
+    :param csv_file: Specified csv file from Argos
     :param catalog: List of acceptable course tags
-    :param catalogURL: URL to the course catalog (undergrad/grad)
-    :param includeAll: Should the function include courses with no sections?
+    :param catalog_url: URL to the course catalog (undergrad/grad)
+    :param include_all: Should the function include courses with no sections?
     :return: Dictionary containing a list of available courses
     """
-    courseList = {}  # Dictionary to store course information
+    course_list = {}  # Dictionary to store course information
     try:
-        df = pd.read_csv(csvFile)  # Read course data from a CSV file
+        df = pd.read_csv(csv_file)  # Read course data from a CSV file
     except FileNotFoundError as e:
         print(e)
         exit(1)
 
-    print(f'Retrieving Course Data from {csvFile}')
+    print(f'Retrieving Course Data from {csv_file}')
 
     # Clean up dataframe
     df = df.drop(columns=['TYPE', 'PART', 'MAX', 'WL_Max', 'WL_Actual', 'CAMPUS'])
@@ -67,17 +67,17 @@ def getCourseData(csvFile, catalog, catalogURL, includeAll):
             courses = {}
 
             print(f'Parsing data for {cat}')
-            url = f'{catalogURL}{cat.lower()}/'
+            url = f'{catalog_url}{cat.lower()}/'
             try:
                 req = requests.get(url)
             except ConnectionError as e:
                 print(e)
                 exit(1)
-            htmlData = req.content
-            parsedData = BeautifulSoup(htmlData, "html.parser")
+            html_data = req.content
+            parsed_data = BeautifulSoup(html_data, "html.parser")
 
             # Extract course information from the parsed HTML
-            courseblocks = parsedData.find_all('div', 'courseblock')
+            courseblocks = parsed_data.find_all('div', 'courseblock')
 
             # Iterate over each courseblock and add to dictionary
             for courseblock in courseblocks:
@@ -87,7 +87,7 @@ def getCourseData(csvFile, catalog, catalogURL, includeAll):
                 tags = df['NUMB'].values
                 courseids = [f'{subject}-{tag}' for subject, tag in zip(subjects, tags)]
 
-                if courseblocktitle[0] not in courseids and not includeAll:
+                if courseblocktitle[0] not in courseids and not include_all:
                     continue
 
                 courseblockdesc = str(courseblock.find('p', 'courseblockdesc')).split('<br/>')
@@ -123,7 +123,7 @@ def getCourseData(csvFile, catalog, catalogURL, includeAll):
                     'prereqs': prereqs.replace('\n', ''),
                     'standing': standing,
                     'desc': desc.replace('  ', ' '),
-                    'sections': getSections(df, courseblocktitle),
+                    'sections': get_sections(df, courseblocktitle),
                     'credits': courseblocktitle[-1].replace(' Credits', '')
                 }
 
@@ -131,12 +131,12 @@ def getCourseData(csvFile, catalog, catalogURL, includeAll):
                 courses[courseblocktitle[0]] = course
 
             # Add course dictionary to the final course list
-            courseList[cat] = courses
+            course_list[cat] = courses
 
-    return courseList
+    return course_list
 
 
-def getSections(df, course):
+def get_sections(df, course):
     """
     Function to return a dictionary containing each section for a given course
     :param df: Dataframe containing sections
@@ -178,7 +178,7 @@ def getSections(df, course):
     return sections
 
 
-def getMEElectives(courses):
+def get_mech_electives(courses):
     """
     Function to return a dictionary containing all courses eligible as ME Electives
     :param courses: Dictionary containing all the courses
@@ -212,7 +212,7 @@ def getMEElectives(courses):
     return electives
 
 
-def dictToDf(courses):
+def dict_to_df(courses):
     """
     Function to convert a Dictionary of courses into a Pandas DataFrame
     :param courses: Dictionary containing courses
@@ -238,7 +238,7 @@ def dictToDf(courses):
     return StyleFrame(pd.DataFrame(data, columns=heads))
 
 
-def exportCourses(courses, filetype, filename):
+def export_courses(courses, filetype, filename):
     """
     Function to export a dictionary of courses to a given file format
     :param courses: Dictionary of courses to be exported
@@ -257,7 +257,7 @@ def exportCourses(courses, filetype, filename):
 
         case 'xlsx':
             with StyleFrame.ExcelWriter(filename) as writer:
-                sf = dictToDf(courses)
+                sf = dict_to_df(courses)
                 sf.to_excel(
                     excel_writer=writer,
                     best_fit=heads

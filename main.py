@@ -30,7 +30,7 @@ def close_window():
     app.destroy()
 
 
-def readConfig(filename):
+def read_config(filename):
     """
     Function to read the config file and output parameters
     :param filename: Name of the config file
@@ -49,7 +49,7 @@ class Application(tk.Tk):
         super().__init__()
 
         # Read config file
-        self.config = readConfig('data/config.yml')
+        self.config = read_config('data/config.yml')
 
         # Load config into constants
         self.APP_TITLE = self.config['settings']['title']
