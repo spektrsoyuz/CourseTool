@@ -16,14 +16,14 @@ from styleframe import StyleFrame
 warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
-cfilter = ['COMM', 'ECON', 'BUSN', 'MGMT', 'HIST', 'HUMN', 'CILE', 'LA', 'LIT', 'PHIL', 'SSCI', '212', '231',
-           'MECH-231L', 'EE-212', 'MECH-300', 'MECH-307', 'MECH-310', 'MECH-312', 'MECH-320', 'MECH-322',
-           'MECH-330', 'MECH-331', 'MECH-420', 'MECH-422', 'MECH-430', 'MECH-431']
+cfilter = ['COMM', 'ECON', 'BUSN', 'MGMT', 'HIST', 'HUMN', 'CILE', 'LA', 'LIT', 'PHIL', 'SSCI', 'MECH-231L', 'EE-212',
+           'MECH-300', 'MECH-307', 'MECH-310', 'MECH-312', 'MECH-320', 'MECH-322', 'MECH-330', 'MECH-331', 'MECH-420',
+           'MECH-422', 'MECH-430', 'MECH-431']
 
 cafilter = ['BUSN-303', 'BUSN-304', 'MGMT-310', 'MGMT-419', 'MGMT-546', 'MECH-448', 'MECH-495']
 
-heads = ['Tag', 'Name', 'Coreqs', 'Prereqs', 'Standing', 'Instructor', 'Time', 'Date',
-         'Building', 'Room', 'Avail']
+heads = ['Tag', 'Name', 'Section', 'Coreqs', 'Prereqs', 'Standing', 'Instructor', 'Time', 'Date', 'Building', 'Room',
+         'Avail']
 
 
 # -------------------------------------------------- functions ---------------------------------------------------------
@@ -225,6 +225,7 @@ def dict_to_df(courses):
                 data.append([
                     courses[subject][courseblock]['tag'],  # tag
                     courses[subject][courseblock]['name'],  # name
+                    section,  # section
                     courses[subject][courseblock]['coreqs'],  # coreqs
                     courses[subject][courseblock]['prereqs'],  # prereqs
                     courses[subject][courseblock]['standing'],  # standing

@@ -132,6 +132,15 @@ class MainFrame(ttk.Frame):
         term = term.replace(' ', '')
         filetype = 'xlsx'
 
+        # Print options
+        print(self.STR_ARGOS.get())
+        print(self.STR_TERM.get())
+        print(self.STR_LEVEL.get())
+        print(self.CHECK_EXPORTALL.get())
+        print(self.CHECK_EXPORTADV.get())
+        print(self.CHECK_EXPORTIDV.get())
+        print(self.CHECK_EXPORTME.get())
+
         # Select correct filetype
         match self.STR_EXPORT_FILETYPE.get():
             case 'Excel':
@@ -158,15 +167,15 @@ class MainFrame(ttk.Frame):
         course_functions.export_courses(data, filetype, f'exports/{export_name}')
 
         # Special options
-        if self.CHECK_EXPORTME:
+        if self.CHECK_EXPORTME.get():
             mech_dict = course_functions.get_mech_electives(data)
             course_functions.export_courses(mech_dict, filetype, f'exports/{term}_MECH.{filetype}')
 
-        if self.CHECK_EXPORTADV:
+        if self.CHECK_EXPORTADV.get():
             pass  # TODO export advanced electives
             # course_functions.getAdvElectives(f'exports/{export_name}')
 
-        if self.CHECK_EXPORTIDV:
+        if self.CHECK_EXPORTIDV.get():
             pass  # TODO export in multiple files
 
         return data
