@@ -1,0 +1,53 @@
+app:
+  title: "Course Tool"
+  version: "1.0"
+  lang: "EN"
+  font: "Helvetica"
+  filetypes:
+    - Excel
+    - JSON
+    - YAML
+  tags:
+    - ACCT
+    - BIOL
+    - BUSN
+    - CE
+    - CHME
+    - CHEM
+    - COMM
+    - CS
+    - ECON
+    - ECE
+    - EE
+    - ENGR
+    - EP
+    - FINC
+    - HIST
+    - HUMN
+    - IME
+    - ISYS
+    - LANG
+    - LA
+    - LIT
+    - MATH
+    - MECH
+    - MEDI
+    - MFGO
+    - MGMT
+    - MKRT
+    - PHIL
+    - PHYS
+    - PSYC
+    - SSCI
+    - SOC
+defaults:
+  term: 'Winter 2024'
+  level: 'Undergrad'
+  url: 'https://catalog.kettering.edu/coursesaz/'
+  filetype: 'Excel'
+misc:
+  cfilter: [ 'COMM', 'ECON', 'BUSN', 'MGMT', 'HIST', 'HUMN', 'CILE', 'LA', 'LIT', 'PHIL', 'SSCI', 'MECH-231L', 'EE-212',
+             'MECH-300', 'MECH-307', 'MECH-310', 'MECH-312', 'MECH-320', 'MECH-322', 'MECH-330', 'MECH-331', 'MECH-420',
+             'MECH-422', 'MECH-430', 'MECH-431' ]
+  cafilter: [ 'BUSN-303', 'BUSN-304', 'MGMT-310', 'MGMT-419', 'MGMT-546', 'MECH-448', 'MECH-495' ]
+  advfilter: [ 'COMM-101', 'COMM', 'ECON', 'HIST', 'HUMN', 'LANG', 'LIT', 'PHIL', 'PSYC', 'SSCI', 'SOC' ]
