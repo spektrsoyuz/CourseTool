@@ -5,6 +5,7 @@ Filename: course_functions.py
 Author: Seth Christie
 """
 import json
+import time
 
 from styleframe import StyleFrame
 import yaml
@@ -58,11 +59,7 @@ def get_course_data(csv_file, tags, catalog_url, export_all):
         print(f'[CourseTool] Retrieving courses from {tag_url}')
 
         # send HTML content request to page
-        try:
-            response = requests.get(tag_url)
-        except ConnectionError as e:
-            print(e)
-            exit(1)
+        response = retry_get(tag_url)
 
         courseblocks = BeautifulSoup(response.text, 'html.parser').find_all('div', 'courseblock')
         for courseblock in courseblocks:
@@ -315,3 +312,13 @@ def export_courses(courses, filetype, filename):
                 json.dump(courses, file, ensure_ascii=False, indent=2)
 
     print(f'[CourseTool] Exported courses to {filename}.')
+
+
+def retry_get(url, max_retries=3):
+  for attempt in range(max_retries):
+    try:
+      response = requests.get(url)
+      return response
+    except Exception as e:
+      print(f"[CourseTool] Attempt {attempt + 1} failed: {e}")
+      time.sleep(1)  # wait 1 second before retrying
