@@ -60,6 +60,7 @@ class Application(tk.Tk):
 
         self.MISC_CFILTER = self.config['misc']['cfilter']
         self.MISC_CAFILTER = self.config['misc']['cafilter']
+        self.MISC_ADVFILTER = self.config['misc']['advfilter']
 
         # set theme to dark theme
         sv_ttk.set_theme('dark')
